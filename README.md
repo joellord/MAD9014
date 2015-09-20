@@ -1,2 +1,1 @@
-# MAD9014
-Cross Platform Application Development 1
+Follow the instructions in the `index.html` file to complete the tutorial.
