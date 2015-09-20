@@ -2,8 +2,7 @@
 
 /****************************************
 Write a function that runs AFTER the page has 
-finished loading.  This function should write a
-message that indicates that the page is loaded.
+finished loading.
 
 Add a second function that will run each time the 
 menu toggle image is clicked. When the function 
@@ -19,4 +18,16 @@ where it is setting the nav menu to
 display:none;
 ****************************************/
 
+window.onload = function() {
+  console.log("Page loaded");
+  document.getElementById("menu-control").onclick = function() {
+    var nav = document.getElementsByClassName("mainnav")[0];
+    if (nav.style.display != "block") {
+      nav.style.display = "block";
+    } else {
+      nav.style.display = "none";
+    }
+  };
+
+};
 
